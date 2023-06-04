@@ -1,0 +1,92 @@
+/* ===== DEV PROJECT DECORATION ====== */
+@media (max-width: 1600px) {
+  .straightened {
+    display: flex;
+  }
+
+  .dev-project-board,
+  .ux-project-board {
+    width: 500px;
+    height: 680px;
+
+    margin: 70px 0 0 110px;
+  }
+
+  .previous-dev-projects,
+  .previous-ux-projects {
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1280px) {
+  .straightened {
+    display: flex;
+  }
+
+  .dev-project-board,
+  .ux-project-board {
+    width: 500px;
+    height: 680px;
+
+    margin: 70px 0 0 10px;
+  }
+
+  .previous-dev-projects,
+  .previous-ux-projects {
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .straightened {
+    display: block;
+  }
+
+  .dev-project-board,
+  .ux-project-board {
+    width: 700px;
+    height: 700px;
+
+    margin: 70px 0 0 10px;
+  }
+
+  .previous-dev-projects,
+  .previous-ux-projects {
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .dev-project-board,
+  .ux-project-board {
+    width: 500px;
+    height: 700px;
+
+    margin: 30px 0 0 10px;
+  }
+
+  .previous-dev-projects,
+  .previous-ux-projects {
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+  }
+}
+
+@media (max-width: 330px) {
+  .dev-project-board,
+  .ux-project-board {
+    width: 500px;
+    height: 700px;
+
+    margin: 30px 0 0 60px;
+  }
+
+  .previous-dev-projects,
+  .previous-ux-projects {
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+  }
+}

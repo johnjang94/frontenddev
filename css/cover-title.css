@@ -1,0 +1,19 @@
+#cover-title {
+  text-align: center;
+  font-size: 150px;
+  animation: font-size-keyframes 1.5s;
+
+  padding-top: 260px;
+}
+
+@keyframes font-size-keyframes {
+  0% {
+    font-size: 850px;
+    padding: 0;
+    margin: -100px 0 0 -300px;
+  }
+  100% {
+    font-size: 150px;
+    padding-top: 260px;
+  }
+}

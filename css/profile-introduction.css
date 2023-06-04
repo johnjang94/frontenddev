@@ -1,0 +1,32 @@
+@media (max-width: 330px) {
+  .profile-section {
+    display: block;
+  }
+
+  .profile {
+    width: 100px;
+    height: 50px;
+
+    border-radius: 100%;
+
+    margin: 80px 0 0 30px;
+  }
+
+  .first-slide {
+    font-size: 50px;
+    margin: 100px 100px 0 0;
+  }
+
+  .second-slide,
+  .third-slide {
+    font-size: 50px;
+    width: 400px;
+    margin: 0 100px 0 0;
+  }
+
+  .fourth-slide {
+    font-size: 15px;
+
+    margin: -20px 100px 0 0;
+  }
+}
