@@ -1,7 +1,7 @@
-@import url("/css/cover-title.css");
-@import url("/css/top-nav.css");
-@import url("/css/responsive.css");
-@import url("/css/projects-decoration.css");
+@import url("css/cover-title.css");
+@import url("css/top-nav.css");
+@import url("css/responsive.css");
+@import url("css/projects-decoration.css");
 
 /* ===== COVER DECORATION ====== */
 #black-cover {
