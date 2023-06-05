@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* ===== COVER DECORATION ====== */
 #black-cover {
   text-align: center;
@@ -750,8 +754,8 @@ span {
 }
 
 /* ===== DEV PROJECT DECORATION ====== */
-.straightened span {
-  font-family: sans-serif;
+.together {
+  display: flex;
 }
 
 .dev-project-board,
@@ -776,6 +780,7 @@ span {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* this is image */
 .dev-project {
   width: 280px;
   height: auto;
@@ -806,7 +811,7 @@ span {
 
   .dev-project-board,
   .ux-project-board {
-    width: 500px;
+    width: 490px;
     height: 680px;
 
     margin: 70px 0 0 110px;
@@ -840,8 +845,12 @@ span {
 }
 
 @media (max-width: 992px) {
-  .straightened {
+  .together {
     display: block;
+  }
+
+  .together span {
+    font-family: sans-serif;
   }
 
   .dev-project-board,
@@ -889,6 +898,151 @@ span {
     font-size: 25px;
     margin: 10px 0 20px 0;
   }
+}
+
+/* ===== PROJECT INFORMATION DECORATION ====== */
+/* <<<<<< POP-UP WINDOW DECORATION >>>>>> */
+.pop-up-window-button {
+  border: none;
+}
+
+.pop-up-window {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pop-up-window-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 30px;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* <<<<<< FOOTBALL >>>>>> */
+.football-div {
+  margin: -30px 0 0 0;
+}
+.flexible {
+  display: flex;
+}
+
+.football-window-image {
+  width: 800px;
+  height: 500px;
+}
+
+.normal {
+  display: block;
+
+  text-align: left;
+
+  padding: 20px;
+}
+
+.question {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.answer {
+  font-size: 20px;
+}
+
+/* <<<<<< MINI LIST PROJECT >>>>>> */
+.mini-list-div {
+  margin: -20px 0 0 0;
+}
+
+#to-do-list-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#to-do-list-close:hover,
+#to-do-list-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* <<<<<< MINI LIST PROJECT >>>>>> */
+.guess-the-number-div {
+  margin: -20px 0 0 0;
+}
+
+#guess-the-number-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+#guess-the-number:hover,
+#guess-the-number:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* <<<<<< NEWS TIMES PROJECT >>>>>> */
+.times-div {
+  margin: -20px 0 0 0;
+}
+
+#times-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+#times:hover,
+#times:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ===== FOOTER DECORATION ====== */

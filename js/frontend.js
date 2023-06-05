@@ -109,3 +109,56 @@ const introAnimation = () => {
     });
   }
 };
+
+//======== MAIN CONTENT PROJECTS ANIMATION ========
+// <<<<<<<<<< FOOTBALL PROJECT ANIMATION >>>>>>>>>
+let footballInformation = document.getElementById("football-window");
+let footballBtn = document.getElementById("football");
+const span = document.getElementsByClassName("close")[0];
+
+footballBtn.onclick = function () {
+  footballInformation.style.display = "block";
+};
+
+span.onclick = function () {
+  footballInformation.style.display = "none";
+};
+
+// <<<<<<<<<< List PROJECT ANIMATION >>>>>>>>>
+let listProject = document.getElementById("list-window");
+let toDoListBtn = document.getElementById("to-do-list");
+let closeBtn2 = document.getElementById("to-do-list-close");
+
+toDoListBtn.onclick = function () {
+  listProject.style.display = "block";
+};
+
+closeBtn2.onclick = function () {
+  listProject.style.display = "none";
+};
+
+// <<<<<<<<<< GUESS-THE-NUMBER ANIMATION >>>>>>>>>
+let guessNumberProject = document.getElementById("guess-the-number-window");
+let guessNumberBtn = document.getElementById("guess-the-number");
+let closeButton = document.getElementById("guess-the-number-close");
+
+guessNumberBtn.onclick = function () {
+  guessNumberProject.style.display = "block";
+};
+
+closeButton.onclick = function () {
+  guessNumberProject.style.display = "none";
+};
+
+// <<<<<<<<<< NEWS TIMES ANIMATION >>>>>>>>>
+let newsTimes = document.getElementById("times-window");
+let timesBtn = document.getElementById("news-times");
+let timesCloseBtn = document.getElementById("times-close");
+
+timesBtn.onclick = function () {
+  newsTimes.style.display = "block";
+};
+
+timesCloseBtn.onclick = function () {
+  newsTimes.style.display = "none";
+};

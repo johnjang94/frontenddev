@@ -33,12 +33,16 @@
           </nav>
           <div class="topnav">
             <div class="image-column">
-               <img
-                  src="images/header/mobile-nav.jpeg"
-                  alt="Mobile nav"
-                  class="nav-menu"
-               />
-                <img src="images/header/mobile-nav-x.jpg" alt="Mobile Nav X" class="x-button">
+              <img
+                src="images/header/mobile-nav.jpeg"
+                alt="Mobile nav"
+                class="nav-menu"
+              />
+              <img
+                src="images/header/mobile-nav-x.jpg"
+                alt="Mobile Nav X"
+                class="x-button"
+              />
             </div>
             <div id="nav-links">
               <a href="#" class="navlink">Home</a>
@@ -52,10 +56,15 @@
       <section id="profile-introduction">
         <div class="container">
           <div id="background-music">
-              <div class="hover">
-                <p>Rise Up by The Fat Cat</p>
-                <audio src="bgm/Rise_up.mp3" id="background-audio" controls autoplay></audio>
-              </div>
+            <div class="hover">
+              <p>Rise Up by The Fat Cat</p>
+              <audio
+                src="bgm/Rise_up.mp3"
+                id="background-audio"
+                controls
+                autoplay
+              ></audio>
+            </div>
           </div>
           <div class="centered">
             <img
@@ -68,7 +77,7 @@
             </p>
           </div>
           <div class="profile-section">
-              <img
+            <img
               src="images/profile/profile_2D.png"
               alt="Profile"
               class="profile"
@@ -85,52 +94,193 @@
         </div>
       </section>
       <section>
-        <div class="container straightened">
+        <div class="container together">
           <div class="dev-project-board">
             <h1 class="previous-dev-projects">
               << Previous Development Projects >>
             </h1>
-            <div>
-              <img
-                src="images/dev_project/football.png"
-                alt="Football Website"
-                class="dev-project"
-                style="margin-left: -30px; cursor: pointer"
-              />
-              <span style="font-size: 20px; margin-top: 50px"
+            <div class="football-div">
+              <button id="football" class="pop-up-window-button">
+                <img
+                  src="images/dev_project/football.png"
+                  alt="Football Website"
+                  class="dev-project"
+                  style="margin-left: -30px; cursor: pointer"
+                />
+              </button>
+              <span
+                style="
+                  font-size: 20px;
+                  margin-top: 50px;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
                 >Football Website</span
               >
+              <div class="pop-up-window" id="football-window">
+                <div class="pop-up-window-content">
+                  <span class="close">&times;</span>
+                  <!-- I am going to apply display:flex in this one -->
+                  <h1 class="image-title">Football Website</h1>
+                  <div class="flexible">
+                    <img
+                      src="images/dev_project/football.png"
+                      alt="Football Website"
+                      class="football-window-image"
+                    />
+                    <div class="normal">
+                      <p class="question">Product</p>
+                      <p class="answer">
+                        I have made a simple static website about a female
+                        football team.
+                      </p>
+                      <p class="question">Used Languages</p>
+                      <p class="answer">I have used HTML5 and CSS3.</p>
+                      <p class="question">Lesson Learned</p>
+                      <p class="answer">
+                        I have learned now to create a static website using
+                        HTML5 and CSS3.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <img
-                src="images/dev_project/to-do-list.png"
-                alt="To Do List"
-                class="dev-project"
-                style="cursor: pointer"
-              />
-              <span style="font-size: 20px; margin-top: 50px"
+            <div class="mini-list-div">
+              <button id="to-do-list" class="pop-up-window-button">
+                <img
+                  src="images/dev_project/to-do-list.png"
+                  alt="To Do List"
+                  class="dev-project"
+                  style="cursor: pointer"
+                />
+              </button>
+              <span
+                style="
+                  font-size: 20px;
+                  margin-top: 50px;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
                 >Mini To-Do List app</span
               >
+              <div class="pop-up-window" id="list-window">
+                <div class="pop-up-window-content">
+                  <span id="to-do-list-close">&times;</span>
+                  <!-- I am going to apply display:flex in this one -->
+                  <h1 class="image-title">Mini To-Do List Web application</h1>
+                  <div class="flexible">
+                    <img
+                      src="images/dev_project/to-do-list.png"
+                      alt="Mini To Do List app"
+                      class="football-window-image"
+                    />
+                    <div class="normal">
+                      <p class="question">Product</p>
+                      <p class="answer">I have made a simple to do list.</p>
+                      <p class="question">Used Languages</p>
+                      <p class="answer">
+                        I have used HTML5, CSS3, and JavaScript.
+                      </p>
+                      <p class="question">Lesson Learned</p>
+                      <p class="answer">
+                        I have learned how to add, check, and delete items on
+                        the list.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <img
-                src="images/dev_project/guess.png"
-                alt="Guess Game"
-                class="dev-project"
-                style="margin-left: -20px; cursor: pointer"
-              />
-              <span style="font-size: 20px; margin-top: 50px"
+            <div class="guess-the-number-div">
+              <button id="guess-the-number" class="pop-up-window-button">
+                <img
+                  src="images/dev_project/guess.png"
+                  alt="Guess Game"
+                  class="dev-project"
+                  style="margin-left: -20px; cursor: pointer"
+                />
+              </button>
+              <span
+                style="
+                  font-size: 20px;
+                  margin-top: 50px;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
                 >Guess the number</span
               >
+              <div class="pop-up-window" id="guess-the-number-window">
+                <div class="pop-up-window-content">
+                  <span id="guess-the-number-close">&times;</span>
+                  <!-- I am going to apply display:flex in this one -->
+                  <h1 class="image-title">Guess the Number mini game</h1>
+                  <div class="flexible">
+                    <img
+                      src="images/dev_project/guess.png"
+                      alt="Guess the Number mini game"
+                      class="football-window-image"
+                    />
+                    <div class="normal">
+                      <p class="question">Product</p>
+                      <p class="answer">I have made a simple game.</p>
+                      <p class="question">Used Languages</p>
+                      <p class="answer">
+                        I have used HTML5, CSS3, and JavaScript.
+                      </p>
+                      <p class="question">Lesson Learned</p>
+                      <p class="answer">
+                        I have learned how to make players to guess around a
+                        random number.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <img
-                src="images/dev_project/news-app.png"
-                alt="News application"
-                class="dev-project"
-                style="margin-left: -60px; cursor: pointer"
-              />
-              <span style="font-size: 20px; margin-top: 50px">News Times</span>
+            <div class="times-div">
+              <button id="news-times" class="pop-up-window-button">
+                <img
+                  src="images/dev_project/news-app.png"
+                  alt="News application"
+                  class="dev-project"
+                  style="margin-left: -60px; cursor: pointer"
+                />
+              </button>
+              <span
+                style="
+                  font-size: 20px;
+                  margin-top: 50px;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
+                >News Times</span
+              >
+              <div class="pop-up-window" id="times-window">
+                <div class="pop-up-window-content">
+                  <span id="times-close">&times;</span>
+                  <!-- I am going to apply display:flex in this one -->
+                  <h1 class="image-title">Times Newspaper Application</h1>
+                  <div class="flexible">
+                    <img
+                      src="images/dev_project/news-app.png"
+                      alt="News Times"
+                      class="football-window-image"
+                    />
+                    <div class="normal">
+                      <p class="question">Product</p>
+                      <p class="answer">
+                        I have made an online newspaper application.
+                      </p>
+                      <p class="question">Used Languages</p>
+                      <p class="answer">
+                        I have used HTML5, CSS3, JavaScript, and a news web API.
+                      </p>
+                      <p class="question">Lesson Learned</p>
+                      <p class="answer">
+                        I have learned how to create an application using a
+                        RESTful API.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="ux-project-board">
@@ -142,7 +292,12 @@
                 class="ux-project"
                 style="margin-left: -60px; cursor: pointer"
               />
-              <span style="font-size: 20px; margin-top: 50px"
+              <span
+                style="
+                  font-size: 20px;
+                  margin-top: 50px;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
                 >TeleVU Suite</span
               >
             </div>
@@ -153,10 +308,14 @@
                 class="ux-project"
                 style="cursor: pointer"
               />
-              <span style="font-size: 18.5px; margin-top: 50px"
+              <span
+                style="
+                  font-size: 18.5px;
+                  margin-top: 50px;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
                 >TuGo Travel Services</span
               >
-            </div>
             </div>
           </div>
         </div>
@@ -166,11 +325,15 @@
         <div class="container"></div>
       </section>
       <footer>
-         <div class="container">
+        <div class="container">
           <div class="connect">
             <h3 class="contact-title">Get in touch!</h3>
             <div class="line">
-              <img src="images/footer/linkedin.png" alt="LinkedIn" class="linkedin">
+              <img
+                src="images/footer/linkedin.png"
+                alt="LinkedIn"
+                class="linkedin"
+              />
               <a href="https://www.linkedin.com/in/jscolbe/">John Jang</a>
             </div>
           </div>
