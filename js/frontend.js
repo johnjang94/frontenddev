@@ -8,6 +8,8 @@ let clickMessage = document.querySelector(".click");
 const mainContent = document.getElementById("main-content");
 let mainNavigation = document.querySelector(".navigation-header");
 let profile = document.getElementById("profile-introduction");
+let backgroundAudio = document.getElementById("background-audio");
+let greetingAudio = new Audio("../bgm/portfolio_greeting.mp3");
 
 blackCover.addEventListener("click", () => {
   blackCover.style.transform = "translateY(-700px)";
@@ -61,32 +63,15 @@ const display = () => {
 
 addEventListener("DOMContentLoaded", () => {
   display();
-
+  greetingAudio.play();
+  backgroundAudio.pause();
   mainContent.style.display = "none";
   blackCover.addEventListener("click", () => {
     mainContent.style.display = "block";
-
+    backgroundAudio.play();
     window.scroll({ top: 0, behavior: "smooth" });
   });
 });
-
-// ======== MAIN CONTENT ANIMATION ========
-let responsiveDesignTag = document.querySelector(".responsiveness");
-let profileSection = document.querySelector(".profile-section");
-let slide = document.getElementById("slide-color");
-
-const introAnimation = () => {
-  if (responsiveDesignTag.scrollIntoView()) {
-    responsiveDesignTag.style.animation = "font-changes";
-  }
-
-  if (profileSection.scrollIntoView()) {
-    slide.style.display = "block";
-    slide.addEventListener("animationend", () => {
-      slide.style.color = "black";
-    });
-  }
-};
 
 // ======== MOBILE DROP-DOWN MENU ========
 let mobileNav = document.querySelector(".topnav");
@@ -106,3 +91,21 @@ closeBtn.addEventListener("click", () => {
   navMenu.style.display = "block";
   closeBtn.style.display = "none";
 });
+
+// ======== MAIN CONTENT ANIMATION ========
+let responsiveDesignTag = document.querySelector(".responsiveness");
+let profileSection = document.querySelector(".profile-section");
+let slide = document.getElementById("slide-color");
+
+const introAnimation = () => {
+  if (responsiveDesignTag.scrollIntoView()) {
+    responsiveDesignTag.style.animation = "font-changes";
+  }
+
+  if (profileSection.scrollIntoView()) {
+    slide.style.display = "block";
+    slide.addEventListener("animationend", () => {
+      slide.style.color = "black";
+    });
+  }
+};

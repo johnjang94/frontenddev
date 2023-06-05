@@ -139,6 +139,51 @@ span {
   font-family: "Times New Roman", Times, serif;
 }
 
+/* ===== BACKGROUND MUSIC ====== */
+.hover:hover {
+  transition: all 1s ease-in-out;
+
+  margin-left: 250px;
+}
+
+#background-music {
+  border-radius: 25px;
+  background-color: whitesmoke;
+  width: fit-content;
+
+  position: absolute;
+
+  animation: slide-to-right 1.5s ease-in-out alternate,
+    slide-to-left 1.5s ease-in-out 2s alternate;
+
+  animation-fill-mode: forwards;
+
+  margin: 20px 0 0 0;
+}
+
+@keyframes slide-to-right {
+  0% {
+    margin-left: -500px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes slide-to-left {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -300px;
+    opacity: 0.3;
+  }
+}
+
+#background-music p {
+  margin: 25px 0 -3px 18px;
+}
+
 /* ===== DEV PROJECT DECORATION ====== */
 .straightened span {
   font-family: sans-serif;
