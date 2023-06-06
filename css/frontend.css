@@ -384,7 +384,7 @@ span {
   animation: font-changes 1.5s;
   animation-delay: 2s;
 
-  font-size: 50px;
+  font-size: 45px;
 }
 
 @keyframes font-changes {
@@ -394,7 +394,7 @@ span {
     margin: -200px 0 0 -300px;
   }
   100% {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
@@ -405,7 +405,7 @@ span {
   }
 
   .responsiveness {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   @keyframes font-changes {
@@ -415,7 +415,7 @@ span {
       margin: 0px 0 0 -300px;
     }
     100% {
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 }
@@ -426,7 +426,7 @@ span {
   }
 
   .responsiveness {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   @keyframes font-changes {
@@ -436,7 +436,7 @@ span {
       margin: -100px 0 0 -300px;
     }
     100% {
-      font-size: 50px;
+      font-size: 30px;
     }
   }
 }
@@ -472,7 +472,7 @@ span {
   }
 
   .responsiveness {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 10px;
   }
 
@@ -483,7 +483,7 @@ span {
       margin: -100px 0 0 -300px;
     }
     100% {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
 }
@@ -811,7 +811,7 @@ span {
 
   .dev-project-board,
   .ux-project-board {
-    width: 490px;
+    width: 500px;
     height: 680px;
 
     margin: 70px 0 0 110px;
@@ -933,11 +933,14 @@ span {
 
 .pop-up-window-content {
   background-color: #fefefe;
-  margin: auto;
+  margin: -40px 100px 0 155px;
   padding: 10px;
   border: 1px solid #888;
   border-radius: 30px;
   width: 80%;
+  height: 98%;
+
+  overflow: scroll;
 }
 
 .close {
@@ -960,6 +963,8 @@ span {
 }
 .flexible {
   display: flex;
+
+  padding: 10px;
 }
 
 .football-window-image {
@@ -973,6 +978,7 @@ span {
   text-align: left;
 
   padding: 20px;
+  margin: -20px 0 0 0;
 }
 
 .question {
@@ -1040,6 +1046,48 @@ span {
 
 #times:hover,
 #times:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* <<<<<< TELEVU PROJECT >>>>>> */
+#televu {
+  margin-top: -20px;
+}
+
+#televu-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+#televu:hover,
+#televu:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* <<<<<< TUGO PROJECT >>>>>> */
+#tugo {
+  margin-top: -10px;
+}
+
+#tugo-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+#tugo:hover,
+#tugo:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

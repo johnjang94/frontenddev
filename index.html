@@ -286,12 +286,14 @@
           <div class="ux-project-board">
             <h1 class="previous-ux-projects"><< Previous UX Projects >></h1>
             <div class="undo-flex">
-              <img
-                src="images/ux_project/televu/televu_suite.png"
-                alt="TeleVU Suite"
-                class="ux-project"
-                style="margin-left: -60px; cursor: pointer"
-              />
+              <button id="televu" class="pop-up-window-button">
+                <img
+                  src="images/ux_project/televu/televu_suite.png"
+                  alt="TeleVU Suite"
+                  class="ux-project"
+                  style="margin-left: -60px; cursor: pointer"
+                />
+              </button>
               <span
                 style="
                   font-size: 20px;
@@ -300,14 +302,46 @@
                 "
                 >TeleVU Suite</span
               >
+              <div class="pop-up-window" id="televu-window">
+                <div class="pop-up-window-content">
+                  <span id="televu-close">&times;</span>
+                  <!-- I am going to apply display:flex in this one -->
+                  <h1 class="image-title">TeleVU Suite Portal</h1>
+                  <div class="flexible scrolling">
+                    <img
+                      src="images/ux_project/televu/televu_suite.png"
+                      alt="TeleVU Medical Company"
+                      class="football-window-image"
+                    />
+                    <div class="normal">
+                      <p class="question">Product</p>
+                      <p class="answer">
+                        I have designed an internal communication portal for
+                        medical professional with other design colleagues.
+                      </p>
+                      <p class="question">
+                        Used Design Program & Communication Tools
+                      </p>
+                      <p class="answer">Figma, Discord & Google Spreadsheet</p>
+                      <p class="question">Lesson Learned</p>
+                      <p class="answer">
+                        It is important to understand the client's business and
+                        to meet the needs of the users.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div>
-              <img
-                src="images/ux_project/tugo/Tugo.jpeg"
-                alt="TuGo Travel Services"
-                class="ux-project"
-                style="cursor: pointer"
-              />
+              <button id="tugo" class="pop-up-window-button">
+                <img
+                  src="images/ux_project/tugo/Tugo.jpeg"
+                  alt="TuGo Travel Services"
+                  class="ux-project"
+                  style="cursor: pointer"
+                />
+              </button>
               <span
                 style="
                   font-size: 18.5px;
@@ -316,6 +350,39 @@
                 "
                 >TuGo Travel Services</span
               >
+              <div class="pop-up-window" id="tugo-window">
+                <div class="pop-up-window-content">
+                  <span id="tugo-close">&times;</span>
+                  <!-- I am going to apply display:flex in this one -->
+                  <h1 class="image-title">TuGo Travel Service</h1>
+                  <div class="flexible">
+                    <img
+                      src="images/ux_project/tugo/Tugo.jpeg"
+                      alt="TuGo Travel Insurance"
+                      class="football-window-image"
+                    />
+                    <div class="normal">
+                      <p class="question">Product</p>
+                      <p class="answer">
+                        I have redesigned the website and the member portal for
+                        TuGo Travel Insurance company.
+                      </p>
+                      <p class="question">
+                        Used Design Program & Communication Tools
+                      </p>
+                      <p class="answer">Figma & Google Spreadsheet</p>
+                      <p class="question">Released Products</p>
+                      <ul class="answer">
+                        Redesigned:
+                        <li>Home page</li>
+                        <li>About page</li>
+                        <li>Information regarding insurance service</li>
+                        <li>Member Portal</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

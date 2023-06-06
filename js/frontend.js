@@ -111,6 +111,8 @@ const introAnimation = () => {
 };
 
 //======== MAIN CONTENT PROJECTS ANIMATION ========
+// const popUpWindow = document.querySelector(".pop-up-window");
+
 // <<<<<<<<<< FOOTBALL PROJECT ANIMATION >>>>>>>>>
 let footballInformation = document.getElementById("football-window");
 let footballBtn = document.getElementById("football");
@@ -118,10 +120,12 @@ const span = document.getElementsByClassName("close")[0];
 
 footballBtn.onclick = function () {
   footballInformation.style.display = "block";
+  document.body.style.overflow = "hidden";
 };
 
 span.onclick = function () {
   footballInformation.style.display = "none";
+  document.body.style.overflow = "";
 };
 
 // <<<<<<<<<< List PROJECT ANIMATION >>>>>>>>>
@@ -131,10 +135,12 @@ let closeBtn2 = document.getElementById("to-do-list-close");
 
 toDoListBtn.onclick = function () {
   listProject.style.display = "block";
+  document.body.style.overflow = "hidden";
 };
 
 closeBtn2.onclick = function () {
   listProject.style.display = "none";
+  document.body.style.overflow = "";
 };
 
 // <<<<<<<<<< GUESS-THE-NUMBER ANIMATION >>>>>>>>>
@@ -144,10 +150,12 @@ let closeButton = document.getElementById("guess-the-number-close");
 
 guessNumberBtn.onclick = function () {
   guessNumberProject.style.display = "block";
+  document.body.style.overflow = "hidden";
 };
 
 closeButton.onclick = function () {
   guessNumberProject.style.display = "none";
+  document.body.style.overflow = "";
 };
 
 // <<<<<<<<<< NEWS TIMES ANIMATION >>>>>>>>>
@@ -157,8 +165,40 @@ let timesCloseBtn = document.getElementById("times-close");
 
 timesBtn.onclick = function () {
   newsTimes.style.display = "block";
+  document.body.style.overflow = "hidden";
 };
 
 timesCloseBtn.onclick = function () {
   newsTimes.style.display = "none";
+  document.body.style.overflow = "";
+};
+
+// <<<<<<<<<< TELEVU ANIMATION >>>>>>>>>
+let companyWindow = document.getElementById("televu-window");
+let companyBtn = document.getElementById("televu");
+let companyCloseBtn = document.getElementById("televu-close");
+
+companyBtn.onclick = function () {
+  companyWindow.style.display = "block";
+  document.body.style.overflow = "hidden";
+};
+
+companyCloseBtn.onclick = function () {
+  companyWindow.style.display = "none";
+  document.body.style.overflow = "";
+};
+
+// <<<<<<<<<< TUGO ANIMATION >>>>>>>>>
+let tugoInsurance = document.getElementById("tugo-window");
+let tugoBtn = document.getElementById("tugo");
+let tugoCloseBtn = document.getElementById("tugo-close");
+
+tugoBtn.onclick = function () {
+  tugoInsurance.style.display = "block";
+  document.body.style.overflow = "hidden";
+};
+
+tugoCloseBtn.onclick = function () {
+  tugoInsurance.style.display = "none";
+  document.body.style.overflow = "";
 };
