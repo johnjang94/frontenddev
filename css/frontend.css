@@ -113,6 +113,11 @@ button:hover {
   text-shadow: #b3e0fefd;
 }
 
+#main-nav a {
+  text-decoration: none;
+  color: black;
+}
+
 /* <<<<<< TOP-NAVIGATION SETTING >>>>>>>>> */
 
 @media (min-width: 769px) and (max-width: 1600px) {
@@ -753,6 +758,42 @@ span {
   }
 }
 
+/* ===== INTRODUCTION ON MYSELF DECORATION ====== */
+.hi {
+  text-align: center;
+
+  margin: 30px 0 0 0;
+}
+
+.profile-board {
+  padding: 100px;
+}
+
+.picture-only {
+  text-align: center;
+}
+
+.real-profile {
+  width: 450px;
+  height: auto;
+
+  margin-top: 60px;
+}
+
+.value-background {
+  background-color: beige;
+  margin: 0 -100px -30px -100px;
+}
+
+.values {
+  padding: 30px 0 30px 0;
+  margin: 0px 200px 0 200px;
+}
+
+.values h1 {
+  margin-bottom: 30px;
+}
+
 /* ===== DEV PROJECT DECORATION ====== */
 .together {
   display: flex;
@@ -931,16 +972,58 @@ span {
   }
 }
 
+/* <<<<<< MY INTRODUCTION PROJECT >>>>>> */
+/* .mini-list-div {
+  margin: -20px 0 0 0;
+} */
+
+#about_me {
+  display: flex;
+}
+
+#about_me h3 {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+#myself {
+  border: none;
+  background-color: transparent;
+
+  text-decoration: underline;
+  color: lightblue;
+}
+
+#myself:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.me-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.me-close:hover,
+.me-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .pop-up-window-content {
   background-color: #fefefe;
-  margin: -40px 100px 0 155px;
-  padding: 10px;
   border: 1px solid #888;
   border-radius: 30px;
+
   width: 80%;
   height: 98%;
-
   overflow: scroll;
+
+  padding: 10px;
+  margin: -40px 100px 0 155px;
 }
 
 .close {
@@ -970,6 +1053,114 @@ span {
 .football-window-image {
   width: 800px;
   height: 500px;
+}
+
+/* ====== SCREEN ADJUSTMENTS FOR FOOTBALL IMAGE ======= */
+@media (max-width: 1399px) {
+  .pop-up-window-content {
+    margin: -40px 100px 0 150px;
+  }
+  .football-window-image {
+    width: 700px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .pop-up-window-content {
+    margin: -40px 100px 0 130px;
+  }
+
+  .football-window-image {
+    width: 600px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 1103px) {
+  .pop-up-window-content {
+    margin: -40px 100px 0 110px;
+  }
+
+  .football-window-image {
+    width: 480px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 993px) {
+  .pop-up-window-content {
+    margin: -40px 100px 0 90px;
+  }
+
+  .flexible {
+    display: block;
+  }
+
+  .football-window-image {
+    width: 700px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .pop-up-window-content {
+    margin: -40px 100px 0 70px;
+  }
+
+  .flexible {
+    display: block;
+  }
+
+  .football-window-image {
+    width: 600px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pop-up-window-content {
+    margin: -40px 100px 0 50px;
+  }
+
+  .flexible {
+    display: block;
+  }
+
+  .football-window-image {
+    width: 480px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pop-up-window-content {
+    margin: -40px 100px 0 50px;
+  }
+
+  .flexible {
+    display: block;
+  }
+
+  .football-window-image {
+    width: 390px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 460px) {
+  .pop-up-window-content {
+    margin: -40px 100px 0 20px;
+  }
+
+  .flexible {
+    display: block;
+  }
+
+  .football-window-image {
+    width: 30px;
+    height: auto;
+  }
 }
 
 .normal {
@@ -1093,6 +1284,63 @@ span {
   cursor: pointer;
 }
 
+/* ===== CONTACT FORM DECORATION ====== */
+.lined-up {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 20px 0 30px;
+}
+
+/* .contact-form {
+  margin-top: 20px;
+}
+
+.contact-form p {
+  margin: 10px 0 0 0;
+}
+
+.contact-form input {
+  width: 540px;
+  border: 0.5px solid lightgray;
+  border-radius: 25px;
+
+  padding: 10px;
+}
+
+.contact-form textarea {
+  width: 540px;
+  border: 0.5px solid lightgray;
+  border-radius: 25px;
+
+  padding: 10px;
+}*/
+
+.contact-form button {
+  float: right;
+  background-color: #a9afb338;
+
+  border: 0.5px solid lightgrey;
+  border-radius: 25px;
+
+  padding: 0 10px 0 10px;
+  margin: 0 0 10px 0;
+}
+
+.contact-form button:hover {
+  background-color: rgba(50, 50, 93, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact-form button a {
+  text-decoration: none;
+  color: blue;
+}
+
+.contact-form button a:hover {
+  color: black;
+}
+
 /* ===== FOOTER DECORATION ====== */
 footer {
   padding: 20px;
@@ -1106,6 +1354,48 @@ footer {
   margin: 20px 75px 0 100px;
 }
 
+@media (max-width: 1399px) {
+  .connect {
+    margin: 20px 5px 0 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .connect {
+    margin: 20px 30px 0 10px;
+  }
+}
+
+@media (max-width: 993px) {
+  .connect {
+    height: 350px;
+    margin: 20px 5px 0 10px;
+  }
+
+  .lined-up {
+    display: block;
+  }
+
+  .contact-form {
+    margin: 30px 0 0 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .connect {
+    height: 400px;
+    margin: 20px 5px 0 10px;
+  }
+
+  .lined-up {
+    display: block;
+  }
+
+  .contact-form {
+    margin: 30px 0 0 50px;
+  }
+}
+
 .contact-title {
   text-align: center;
 }
@@ -1115,7 +1405,7 @@ footer {
 }
 
 .line a {
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   color: black;
 

@@ -9,7 +9,7 @@ const mainContent = document.getElementById("main-content");
 let mainNavigation = document.querySelector(".navigation-header");
 let profile = document.getElementById("profile-introduction");
 let backgroundAudio = document.getElementById("background-audio");
-let greetingAudio = new Audio("../bgm/portfolio_greeting.mp3");
+let greetingAudio = new Audio("bgm/portfolio_greeting.mp3");
 
 blackCover.addEventListener("click", () => {
   blackCover.style.transform = "translateY(-700px)";
@@ -41,6 +41,7 @@ downArrow.addEventListener("click", () => {
 const display = () => {
   subtitle.style.display = "block";
   clickMessage.style.display = "block";
+  greetingAudio.play();
   coverTitle.addEventListener("animationend", () => {
     setTimeout(() => {
       coverTitle.style.marginTop = "-70px";
@@ -63,7 +64,6 @@ const display = () => {
 
 addEventListener("DOMContentLoaded", () => {
   display();
-  greetingAudio.play();
   backgroundAudio.pause();
   mainContent.style.display = "none";
   blackCover.addEventListener("click", () => {
@@ -111,7 +111,24 @@ const introAnimation = () => {
 };
 
 //======== MAIN CONTENT PROJECTS ANIMATION ========
-// const popUpWindow = document.querySelector(".pop-up-window");
+// <<<<<<<<<< MY INTRODUCTION ANIMATION >>>>>>>>>
+let myIntroduction = document.getElementById("myself-window");
+let introductionOpenBtn = document.getElementById("myself");
+const introductionCloseBtn = document.getElementsByClassName("me-close")[0];
+
+introductionOpenBtn.onclick = function () {
+  myIntroduction.style.display = "block";
+  document.body.style.overflow = "hidden";
+  myIntroduction.addEventListener("click", () => {
+    myIntroduction.style.display = "none";
+    document.body.style.overflow = "";
+  });
+};
+
+introductionCloseBtn.onclick = function () {
+  myIntroduction.style.display = "none";
+  document.body.style.overflow = "";
+};
 
 // <<<<<<<<<< FOOTBALL PROJECT ANIMATION >>>>>>>>>
 let footballInformation = document.getElementById("football-window");
@@ -121,6 +138,10 @@ const span = document.getElementsByClassName("close")[0];
 footballBtn.onclick = function () {
   footballInformation.style.display = "block";
   document.body.style.overflow = "hidden";
+  footballInformation.addEventListener("click", () => {
+    footballInformation.style.display = "none";
+    document.body.style.overflow = "";
+  });
 };
 
 span.onclick = function () {
@@ -136,6 +157,10 @@ let closeBtn2 = document.getElementById("to-do-list-close");
 toDoListBtn.onclick = function () {
   listProject.style.display = "block";
   document.body.style.overflow = "hidden";
+  listProject.addEventListener("click", () => {
+    listProject.style.display = "none";
+    document.body.style.overflow = "";
+  });
 };
 
 closeBtn2.onclick = function () {
@@ -151,6 +176,10 @@ let closeButton = document.getElementById("guess-the-number-close");
 guessNumberBtn.onclick = function () {
   guessNumberProject.style.display = "block";
   document.body.style.overflow = "hidden";
+  guessNumberProject.addEventListener("click", () => {
+    guessNumberProject.style.display = "none";
+    document.body.style.overflow = "";
+  });
 };
 
 closeButton.onclick = function () {
@@ -166,6 +195,10 @@ let timesCloseBtn = document.getElementById("times-close");
 timesBtn.onclick = function () {
   newsTimes.style.display = "block";
   document.body.style.overflow = "hidden";
+  newsTimes.addEventListener("click", () => {
+    newsTimes.style.display = "none";
+    document.body.style.overflow = "";
+  });
 };
 
 timesCloseBtn.onclick = function () {
@@ -181,6 +214,10 @@ let companyCloseBtn = document.getElementById("televu-close");
 companyBtn.onclick = function () {
   companyWindow.style.display = "block";
   document.body.style.overflow = "hidden";
+  companyWindow.addEventListener("click", () => {
+    companyWindow.style.display = "none";
+    document.body.style.overflow = "";
+  });
 };
 
 companyCloseBtn.onclick = function () {
@@ -196,9 +233,81 @@ let tugoCloseBtn = document.getElementById("tugo-close");
 tugoBtn.onclick = function () {
   tugoInsurance.style.display = "block";
   document.body.style.overflow = "hidden";
+  tugoInsurance.addEventListener("click", () => {
+    tugoInsurance.style.display = "none";
+    document.body.style.overflow = "";
+  });
 };
 
 tugoCloseBtn.onclick = function () {
   tugoInsurance.style.display = "none";
   document.body.style.overflow = "";
 };
+
+// // // <<<<<<<<<< EMAIL ANIMATION >>>>>>>>>
+// $("#email-form").submit(function (e) {
+//   e.preventDefault(); // prevent the form from submitting normally
+//   const firstname = $("input[name=firstname]").val();
+//   const lastname = $("input[name=lastname]").val();
+//   const phone = $("input[name=phone]").val();
+//   const email = $("input[name=email]").val();
+//   const message = $("textarea[name=message]").val();
+//   const data = {
+//     firstname,
+//     lastname,
+//     phone,
+//     email,
+//     message,
+//   };
+//   $.post("/send-email", data, function (response) {
+//     console.log(response); // log the response from the server
+//     alert("Email sent successfully!");
+//   });
+// });
+
+// const express = require("express");
+// const bodyParser = require("body-parser");
+// const nodemailer = require("nodemailer");
+
+// const app = express();
+
+// // create a JSON body parser
+// app.use(bodyParser.json());
+
+// // handle the email form submission
+// app.post("/send-email", (req, res) => {
+//   // create a transporter object
+//   const transporter = nodemailer.createTransport({
+//     host: "smtp.example.com",
+//     port: 465,
+//     secure: true,
+//     auth: {
+//       user: "your-email@example.com",
+//       pass: "your-email-password",
+//     },
+//   });
+
+//   // create a mail object with the form data
+//   const mail = {
+//     from: "your-email@example.com",
+//     to: "jscolbe9675@gmail.com",
+//     subject: "New message from your website",
+//     text: `Name: ${req.body.firstname} ${req.body.lastname}\nPhone: ${req.body.phone}\nEmail: ${req.body.email}\nMessage: ${req.body.message}`,
+//   };
+
+//   // send the email
+//   transporter.sendMail(mail, (error, info) => {
+//     if (error) {
+//       console.log(error);
+//       res.status(500).send("Email could not be sent");
+//     } else {
+//       console.log("Email sent: " + info.response);
+//       res.send("Email sent successfully!");
+//     }
+//   });
+// });
+
+// // start the server
+// app.listen(3000, () => {
+//   console.log("Server started on port 3000");
+// });
