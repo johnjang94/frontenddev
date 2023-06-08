@@ -11,6 +11,8 @@ let profile = document.getElementById("profile-introduction");
 let backgroundAudio = document.getElementById("background-audio");
 let greetingAudio = new Audio("bgm/portfolio_greeting.mp3");
 
+greetingAudio.play();
+
 blackCover.addEventListener("click", () => {
   blackCover.style.transform = "translateY(-700px)";
   blackCover.style.transition = "all 2s ease-out";
@@ -41,7 +43,6 @@ downArrow.addEventListener("click", () => {
 const display = () => {
   subtitle.style.display = "block";
   clickMessage.style.display = "block";
-  greetingAudio.play();
   coverTitle.addEventListener("animationend", () => {
     setTimeout(() => {
       coverTitle.style.marginTop = "-70px";
@@ -68,6 +69,7 @@ addEventListener("DOMContentLoaded", () => {
   mainContent.style.display = "none";
   blackCover.addEventListener("click", () => {
     mainContent.style.display = "block";
+    greetingAudio.pause();
     backgroundAudio.play();
     window.scroll({ top: 0, behavior: "smooth" });
   });

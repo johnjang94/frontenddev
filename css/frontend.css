@@ -1044,6 +1044,7 @@ span {
 .football-div {
   margin: -30px 0 0 0;
 }
+
 .flexible {
   display: flex;
 
@@ -1053,6 +1054,19 @@ span {
 .football-window-image {
   width: 800px;
   height: 500px;
+}
+
+.football-button {
+  border: none;
+  background-color: transparent;
+}
+
+.football-button:hover {
+  color: blue;
+}
+
+.football-button a {
+  text-decoration: none;
 }
 
 /* ====== SCREEN ADJUSTMENTS FOR FOOTBALL IMAGE ======= */
