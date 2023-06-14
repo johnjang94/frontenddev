@@ -1442,3 +1442,35 @@ footer {
 
   margin: 10px 0 0 50px;
 }
+
+/* ================ MENU CARD SETTING ================= */
+footer {
+  text-align: center;
+  color: white;
+
+  margin: 50px 0 0 0;
+}
+
+footer p {
+  z-index: 1000;
+}
+
+.name {
+  padding: 40px 0 0 0;
+}
+
+.copyright {
+  color: aqua;
+
+  margin: 0 0 -30px 0;
+}
+
+footer img {
+  position: absolute;
+
+  width: 1470px;
+  height: 200px;
+
+  z-index: -1000;
+  margin: 0 0 0 -750px;
+}
