@@ -1,0 +1,136 @@
+@import "top-nav.css";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER DECORATION ====== */
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  position: static;
+
+  margin-top: 50px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+button {
+  font-size: 20px;
+
+  border: none;
+  background-color: transparent;
+
+  margin-top: 20px;
+}
+
+button:hover {
+  color: rgb(32, 98, 178);
+  cursor: pointer;
+  text-shadow: #b3e0fefd;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ============= PICTURES ============ */
+.flexible {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tools h1 {
+  text-align: center;
+  font-size: 70px;
+
+  margin: 50px 0 0 0;
+}
+
+.tools img {
+  width: 150px;
+  height: auto;
+
+  border-radius: 100%;
+}
+
+/* <<<<<<<<<<<< FRONT-END >>>>>>>>>>>>>>> */
+.front-end {
+  margin: 0 0 0 50px;
+}
+
+.experience {
+  margin: 35px 0 0 0;
+}
+
+#html5 {
+  margin: 10px 0 0 35px;
+}
+
+#css3 {
+  margin: 10px 10px 0 0;
+}
+
+#js {
+  margin: 10px 30px 0 0;
+}
+
+.tailwind {
+  margin: 10px 180px 0 0;
+}
+
+/* <<<<<<<<<<<<< DESIGN >>>>>>>>>>>>>>>>> */
+.design {
+  margin: 0 150px 0 0;
+}
+
+.design p {
+  margin: 30px 0 0 0;
+}
+
+.design img {
+  margin: -25px 0 0 0;
+}
+
+#figma {
+  margin: 10px 0 0 30px;
+}
+
+#figjam {
+  margin: 10px 20px 0 0;
+}
+/* ================ MENU CARD SETTING ================= */
+footer {
+  text-align: center;
+  color: white;
+
+  margin: 50px 0 0 0;
+}
+
+footer p {
+  z-index: 1000;
+}
+
+.name {
+  padding: 40px 0 0 0;
+}
+
+.copyright {
+  color: aqua;
+
+  margin: 0 0 -30px 0;
+}
+
+footer img {
+  position: absolute;
+
+  width: 1470px;
+  height: 200px;
+
+  z-index: -1000;
+  margin: 0 0 0 -750px;
+}
