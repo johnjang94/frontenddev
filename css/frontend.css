@@ -3,6 +3,10 @@ body {
 }
 
 /* ===== COVER DECORATION ====== */
+.greeting-audio {
+  opacity: 0;
+}
+
 #black-cover {
   text-align: center;
 
@@ -317,13 +321,7 @@ span {
 }
 
 /* ===== BACKGROUND MUSIC ====== */
-.hover:hover {
-  transition: all 1s ease-in-out;
-
-  margin-left: 250px;
-}
-
-#background-music {
+#background-audio {
   border-radius: 25px;
   background-color: whitesmoke;
   width: fit-content;
@@ -352,13 +350,20 @@ span {
     margin-left: 0px;
   }
   100% {
-    margin-left: -300px;
+    margin-left: -200px;
     opacity: 0.3;
   }
 }
 
-#background-music p {
+#background-audio p {
   margin: 25px 0 -3px 18px;
+}
+
+.hover:hover {
+  transition: all 1s ease-in-out;
+  opacity: 1;
+
+  margin-left: 200px;
 }
 
 /* ===== PROFILE DECORATION ====== */

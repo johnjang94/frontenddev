@@ -16,6 +16,11 @@
   <body>
     <div id="black-cover">
       <div class="container">
+        <audio
+          src="bgm/portfolio_greeting.mp3"
+          autoplay
+          class="greeting-audio"
+        ></audio>
         <h1 id="cover-title">Welcome</h1>
         <h3 id="subtitle">to John Jang's Portfolio</h3>
         <div class="down-arrow"></div>
@@ -53,19 +58,14 @@
           </div>
         </header>
       </div>
+      <div class="hover">
+        <div id="background-audio">
+          <p id="song-title"></p>
+          <audio id="audio" autoplay controls></audio>
+        </div>
+      </div>
       <section id="profile-introduction">
         <div class="container">
-          <div id="background-music">
-            <div class="hover">
-              <p>Rise Up by The Fat Cat</p>
-              <audio
-                src="bgm/Rise_up.mp3"
-                id="background-audio"
-                controls
-                autoplay
-              ></audio>
-            </div>
-          </div>
           <div class="centered">
             <img
               src="images/header/responsive_design.gif"
