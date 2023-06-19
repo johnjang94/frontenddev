@@ -108,6 +108,7 @@ addEventListener("DOMContentLoaded", () => {
   mainContent.style.display = "none";
   audioElement.pause();
   blackCover.addEventListener("click", () => {
+    greetingAudio.pause();
     mainContent.style.display = "block";
     window.scroll({ top: 0, behavior: "smooth" });
     audioElement.play();
