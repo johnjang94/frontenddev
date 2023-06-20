@@ -29,7 +29,7 @@ const songs = [
     path: "bgm/lets-dance.mp3",
   },
   { title: `'LAW' by Czaer`, path: "bgm/LAW.mp3" },
-  { title: `'Monoday' by The Fat Rat`, path: "bgm/monoday.mp3" },
+  { title: `'Monody' by The Fat Rat`, path: "bgm/monody.mp3" },
   { title: `'The Nights' by Avicii`, path: "bgm/the-nights.mp3" },
   { title: `'Believer' by Imagine Dragon`, path: "bgm/Believer.mp3" },
   { title: `'Dance Monkey' by Tones and I`, path: "bgm/dance-monkey.mp3" },

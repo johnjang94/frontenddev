@@ -74,6 +74,8 @@ button:hover {
 video {
   width: 1200px;
   height: auto;
+
+  cursor: pointer;
 }
 /* ================ MENU CARD SETTING ================= */
 footer {
