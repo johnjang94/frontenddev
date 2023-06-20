@@ -108,7 +108,6 @@ addEventListener("DOMContentLoaded", () => {
   mainContent.style.display = "none";
   audioElement.pause();
   blackCover.addEventListener("click", () => {
-    greetingAudio.pause();
     mainContent.style.display = "block";
     window.scroll({ top: 0, behavior: "smooth" });
     audioElement.play();
@@ -285,71 +284,3 @@ tugoCloseBtn.onclick = function () {
   tugoInsurance.style.display = "none";
   document.body.style.overflow = "";
 };
-
-// // // <<<<<<<<<< EMAIL ANIMATION >>>>>>>>>
-// $("#email-form").submit(function (e) {
-//   e.preventDefault(); // prevent the form from submitting normally
-//   const firstname = $("input[name=firstname]").val();
-//   const lastname = $("input[name=lastname]").val();
-//   const phone = $("input[name=phone]").val();
-//   const email = $("input[name=email]").val();
-//   const message = $("textarea[name=message]").val();
-//   const data = {
-//     firstname,
-//     lastname,
-//     phone,
-//     email,
-//     message,
-//   };
-//   $.post("/send-email", data, function (response) {
-//     console.log(response); // log the response from the server
-//     alert("Email sent successfully!");
-//   });
-// });
-
-// const express = require("express");
-// const bodyParser = require("body-parser");
-// const nodemailer = require("nodemailer");
-
-// const app = express();
-
-// // create a JSON body parser
-// app.use(bodyParser.json());
-
-// // handle the email form submission
-// app.post("/send-email", (req, res) => {
-//   // create a transporter object
-//   const transporter = nodemailer.createTransport({
-//     host: "smtp.example.com",
-//     port: 465,
-//     secure: true,
-//     auth: {
-//       user: "your-email@example.com",
-//       pass: "your-email-password",
-//     },
-//   });
-
-//   // create a mail object with the form data
-//   const mail = {
-//     from: "your-email@example.com",
-//     to: "jscolbe9675@gmail.com",
-//     subject: "New message from your website",
-//     text: `Name: ${req.body.firstname} ${req.body.lastname}\nPhone: ${req.body.phone}\nEmail: ${req.body.email}\nMessage: ${req.body.message}`,
-//   };
-
-//   // send the email
-//   transporter.sendMail(mail, (error, info) => {
-//     if (error) {
-//       console.log(error);
-//       res.status(500).send("Email could not be sent");
-//     } else {
-//       console.log("Email sent: " + info.response);
-//       res.send("Email sent successfully!");
-//     }
-//   });
-// });
-
-// // start the server
-// app.listen(3000, () => {
-//   console.log("Server started on port 3000");
-// });

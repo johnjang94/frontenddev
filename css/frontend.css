@@ -799,16 +799,40 @@ span {
   margin-bottom: 30px;
 }
 
+.centered-items {
+  text-align: center;
+}
+
+.centered-items img {
+  width: 600px;
+  height: auto;
+
+  margin: 5px 0 0 0;
+}
+
+.centered-items p {
+  font-size: 50px;
+  color: burlywood;
+}
+
 .lined {
   display: flex;
 }
 
+.lined a {
+  text-decoration: none;
+}
+
 .lined img {
-  width: 200px;
+  width: 500px;
   height: auto;
 
   border-radius: 25px;
 
+  margin: 20px 0 30px 50px;
+}
+
+.lined img:hover {
   box-shadow: 0px 7px 38px 10px rgba(145, 145, 145, 0.82);
   -webkit-box-shadow: 0px 7px 38px 10px rgba(145, 145, 145, 0.82);
   -moz-box-shadow: 0px 7px 38px 10px rgba(145, 145, 145, 0.82);
