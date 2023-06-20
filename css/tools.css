@@ -293,6 +293,24 @@ button:hover {
 #figjam {
   margin: 10px 20px 0 0;
 }
+
+/* <<<<<<<<<<<<< DESIGN >>>>>>>>>>>>>>>>> */
+.video-edit {
+  margin: 70px 0 0 0;
+}
+
+.video-image img {
+  width: 120px;
+  height: 100px;
+
+  border-radius: 10px;
+
+  margin: 10px 0 0 0;
+}
+
+#final-cut {
+  margin: 5px 0 0 30px;
+}
 /* ================ MENU CARD SETTING ================= */
 footer {
   text-align: center;
