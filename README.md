@@ -3,8 +3,8 @@
 # Welcome to my portfolio, 3rd Generation!
 
 In this website...<br/>
-<li>I came back with a brand new look of the page --- in terms of length, it is shortened</li><br/>
-<li>you can see the collection of my work both in UX Design and in Front-End Development</li><br/>
+<li>I came back with a brand new look of the page --- in terms of length, it is shortened</li>
+<li>you can see the collection of my work both in UX Design and in Front-End Development</li>
 <li>you will see more detail of every project once you click the image of each project from each grey box</li>
 
 ---
